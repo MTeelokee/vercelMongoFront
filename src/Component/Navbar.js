@@ -49,7 +49,7 @@ const Navbar = () => {
           <div className="navbarbuttons">
             <img
               className="navbarprofilepic"
-              src={`https://back-end-paris-together-meleelyes.vercel.app${user.profile_picture}`}
+              src={`https://vercel-mongo-test-integration-9hli1m9ud-mteelokee.vercel.app${user.profile_picture}`}
               alt="avatar de ton profil"
             />
             <button
