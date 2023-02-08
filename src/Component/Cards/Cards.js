@@ -24,7 +24,7 @@ const Cards = (props) => {
       AddEvent(idEvent);
       await axios
         .put(
-          `https://vercel-mongo-test-integration-9hli1m9ud-mteelokee.vercel.app/request/user`,
+          `https://vercel-mongo-test-integration-n23s61lnn-mteelokee.vercel.app/request/user`,
           { favoriteEvent: idEvent },
           { headers: { authorization: token } }
         )
@@ -45,7 +45,7 @@ const Cards = (props) => {
     if (user) {
       axios
         .delete(
-          `https://vercel-mongo-test-integration-9hli1m9ud-mteelokee.vercel.app/request/user`,
+          `https://vercel-mongo-test-integration-n23s61lnn-mteelokee.vercel.app/request/user`,
           {
             data: { favoriteEvent: idEvent },
             headers: { authorization: token },

@@ -29,7 +29,7 @@ const Register = () => {
 
     await axios
       .post(
-        "https://vercel-mongo-test-integration-9hli1m9ud-mteelokee.vercel.app/request/register",
+        "https://vercel-mongo-test-integration-n23s61lnn-mteelokee.vercel.app/request/register",
         register
       )
       .then((res) => {

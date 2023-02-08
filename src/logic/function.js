@@ -3,7 +3,7 @@ import axios from "axios";
 const AddEvent = (idEvent) => {
   axios
     .get(
-      `https://vercel-mongo-test-integration-9hli1m9ud-mteelokee.vercel.app/request/event/${idEvent}`
+      `https://vercel-mongo-test-integration-n23s61lnn-mteelokee.vercel.app/request/event/${idEvent}`
     )
     .then((res) => console.log(res.data))
 

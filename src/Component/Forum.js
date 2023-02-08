@@ -24,7 +24,7 @@ const CommentList = () => {
     e.preventDefault();
     axios
       .post(
-        `https://vercel-mongo-test-integration-9hli1m9ud-mteelokee.vercel.app/request/comment/${id}`,
+        `https://vercel-mongo-test-integration-n23s61lnn-mteelokee.vercel.app/request/comment/${id}`,
         sendComments,
         { headers: { authorization: token } }
       )
@@ -36,7 +36,7 @@ const CommentList = () => {
   useEffect(() => {
     axios
       .get(
-        `https://vercel-mongo-test-integration-9hli1m9ud-mteelokee.vercel.app/request/comment/${id}`
+        `https://vercel-mongo-test-integration-n23s61lnn-mteelokee.vercel.app/request/comment/${id}`
       )
       .then((res) => {
         res.data !== "No comments" && setComments(res.data);
@@ -66,7 +66,7 @@ const CommentList = () => {
                   key={comment.id}
                 >
                   <img
-                    src={`https://vercel-mongo-test-integration-9hli1m9ud-mteelokee.vercel.app${comment.profile_picture}`}
+                    src={`https://vercel-mongo-test-integration-n23s61lnn-mteelokee.vercel.app${comment.profile_picture}`}
                     width="30px"
                     height={"30px"}
                     style={{ borderRadius: "100px" }}

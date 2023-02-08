@@ -14,7 +14,7 @@ const Register2 = () => {
   const addFavorite = async (tag) => {
     axios
       .put(
-        `https://vercel-mongo-test-integration-9hli1m9ud-mteelokee.vercel.app/request/user`,
+        `https://vercel-mongo-test-integration-n23s61lnn-mteelokee.vercel.app/request/user`,
         { favoriteTag: tag },
         { headers: { authorization: token } }
       )
@@ -27,7 +27,7 @@ const Register2 = () => {
   const removeFavorite = async (tag) => {
     axios
       .delete(
-        `https://vercel-mongo-test-integration-9hli1m9ud-mteelokee.vercel.app/request/user`,
+        `https://vercel-mongo-test-integration-n23s61lnn-mteelokee.vercel.app/request/user`,
         {
           data: { favoriteTag: tag },
           headers: { authorization: token },

@@ -21,7 +21,7 @@ const Profile = () => {
   const addFavorite = async (tag) => {
     axios
       .put(
-        `https://vercel-mongo-test-integration-9hli1m9ud-mteelokee.vercel.app/request/user`,
+        `https://vercel-mongo-test-integration-n23s61lnn-mteelokee.vercel.app/request/user`,
         { favoriteTag: tag },
         { headers: { authorization: token } }
       )
@@ -33,7 +33,7 @@ const Profile = () => {
   const removeFavorite = async (tag) => {
     axios
       .delete(
-        `https://vercel-mongo-test-integration-9hli1m9ud-mteelokee.vercel.app/request/user`,
+        `https://vercel-mongo-test-integration-n23s61lnn-mteelokee.vercel.app/request/user`,
         {
           data: { favoriteTag: tag },
           headers: { authorization: token },
@@ -68,7 +68,7 @@ const Profile = () => {
 
     axios
       .put(
-        "https://vercel-mongo-test-integration-9hli1m9ud-mteelokee.vercel.app/request/uploadimage",
+        "https://vercel-mongo-test-integration-n23s61lnn-mteelokee.vercel.app/request/uploadimage",
         formData,
         {
           headers: {
@@ -118,7 +118,7 @@ const Profile = () => {
     e.preventDefault();
     try {
       const res = await axios.put(
-        "https://vercel-mongo-test-integration-9hli1m9ud-mteelokee.vercel.app/request/update",
+        "https://vercel-mongo-test-integration-n23s61lnn-mteelokee.vercel.app/request/update",
         { email },
         {
           headers: {
@@ -150,7 +150,7 @@ const Profile = () => {
     }
     try {
       const res = await axios.put(
-        "https://vercel-mongo-test-integration-9hli1m9ud-mteelokee.vercel.app/request/update",
+        "https://vercel-mongo-test-integration-n23s61lnn-mteelokee.vercel.app/request/update",
         { password: password, confirm_password: confirmPassword },
         {
           headers: {
@@ -178,7 +178,7 @@ const Profile = () => {
             <h1 className="profiletitle">Ta photo de profil</h1>
             <img
               className="profileuserpic"
-              src={`https://vercel-mongo-test-integration-9hli1m9ud-mteelokee.vercel.app${user.profile_picture}`}
+              src={`https://vercel-mongo-test-integration-n23s61lnn-mteelokee.vercel.app${user.profile_picture}`}
               alt=""
             />
             <input type="file" onChange={(e) => setImage(e.target.files[0])} />

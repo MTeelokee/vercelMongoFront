@@ -28,7 +28,7 @@ const CalendarComponent = (props) => {
   const fetchByEventId = () => {
     axios
       .get(
-        `https://vercel-mongo-test-integration-9hli1m9ud-mteelokee.vercel.app/request/dateForEvent/all/${props.id}`
+        `https://vercel-mongo-test-integration-n23s61lnn-mteelokee.vercel.app/request/dateForEvent/all/${props.id}`
       )
       .then((res) => setEvents(res.data))
       .catch((err) => console.log(err));
@@ -36,7 +36,7 @@ const CalendarComponent = (props) => {
   const addUserEvent = (dateSelect) => {
     axios
       .put(
-        `https://vercel-mongo-test-integration-9hli1m9ud-mteelokee.vercel.app/request/dateForEvent/${props.id}`,
+        `https://vercel-mongo-test-integration-n23s61lnn-mteelokee.vercel.app/request/dateForEvent/${props.id}`,
         { date: dateSelect.toString().slice(0, 15), pseudo: user.pseudo },
         { headers: { authorization: token } }
       )

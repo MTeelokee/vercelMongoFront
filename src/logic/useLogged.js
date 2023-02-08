@@ -8,7 +8,7 @@ const useLogged = () => {
   useEffect(() => {
     axios
       .get(
-        "https://vercel-mongo-test-integration-9hli1m9ud-mteelokee.vercel.app/request/user",
+        "https://vercel-mongo-test-integration-n23s61lnn-mteelokee.vercel.app/request/user",
         { headers: { authorization: token } }
       )
       .then((res) => setUser(res.data))
